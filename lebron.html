@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeBron James - King James</title>
+    <style>
+        /* ── variáveis de cor ── */
+        :root {
+            --black:       #080808;
+            --card-bg:     #111111;
+            --gold:        #C9A84C;
+            --gold-light:  #F0D080;
+            --gold-dim:    #5C4A1E;
+            --purple:      #7C3AED;
+            --purple-dark: #3B0764;
+            --text:        #E8DFC8;
+            --muted:       #7A7060;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: var(--black);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        /* ── header, seções e footer ── */
+        header,
+        section,
+        footer {
+            background: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid var(--gold-dim);
+            box-shadow:
+                0 12px 32px rgba(0, 0, 0, 0.7),
+                0 0 0 1px rgba(124, 58, 237, 0.08);
+            margin-bottom: 20px;
+            padding: 24px;
+            transition: border-color 0.3s;
+        }
+
+        header:hover,
+        section:hover,
+        footer:hover {
+            border-color: var(--purple);
+        }
+
+        /* barra decorativa esquerda dourado → roxo */
+        section {
+            border-left: 3px solid;
+            border-image: linear-gradient(to bottom, var(--gold), var(--purple)) 1;
+            border-radius: 0 16px 16px 0;
+        }
+
+        /* ── header ── */
+        header img {
+            width: 100%;
+            height: 320px;          /* altura fixa do banner */
+            object-fit: cover;
+            object-position: top center;
+            border-radius: 10px;
+            margin-bottom: 16px;
+            display: block;
+            filter: brightness(0.85) saturate(0.7);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            text-align: center;
+            background: linear-gradient(90deg, var(--gold-light), var(--gold), var(--purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ── imagens das seções ── */
+        section img {
+            width: 100%;
+            height: 240px;          /* altura fixa uniforme */
+            object-fit: cover;
+            object-position: center 20%;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            display: block;
+            filter: brightness(0.80) saturate(0.6) contrast(1.05);
+            transition: transform 0.4s, filter 0.4s;
+        }
+
+        section img:hover {
+            transform: scale(1.02);
+            filter: brightness(0.90) saturate(0.75) contrast(1.05);
+        }
+
+        /* ── títulos h2 ── */
+        section h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            letter-spacing: 0.03em;
+            background: linear-gradient(90deg, var(--gold-light) 50%, var(--purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ── parágrafos ── */
+        p {
+            line-height: 1.80;
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.97rem;
+        }
+
+        /* ── footer ── */
+        footer {
+            border-top: 2px solid;
+            border-image: linear-gradient(to right, var(--purple), var(--gold)) 1;
+            text-align: center;
+        }
+
+        footer p {
+            font-style: italic;
+            color: var(--muted);
+        }
+
+        footer p strong {
+            background: linear-gradient(90deg, var(--gold-light), var(--purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="wp2567742-lebron-wallpaper.jpg" alt="LeBron James imagem">
+            <h1>A Jornada do King James (THE GOAT🐐)</h1>
+        </header>
+
+        <section>
+            <img src="download.jpg" alt="Imagem relacionada à introdução de LeBron James">
+            <h2>Quem é LeBron James?</h2>
+            <p>LeBron James é um dos maiores jogadores de basquete de todos os tempos. Nascido em Akron, Ohio, ele superou desafios na infância para se tornar um líder dentro e fora das quadras. Seu talento, dedicação e humildade inspiram milhões de pessoas ao redor do mundo.</p>
+        </section>
+
+        <section>
+            <img src="download (3).jpg" alt="Imagem relacionada aos primeiros anos de LeBron James">
+            <h2>História e Primeiros Anos</h2>
+            <p>Desde jovem, LeBron demonstrou um domínio extraordinário do basquete. Sua carreira no ensino médio chamou a atenção nacional, e ele foi selecionado como a primeira escolha do Draft da NBA em 2003. A jornada do seu bairro até a elite do esporte mostra determinação e coragem.</p>
+        </section>
+
+        <section>
+            <img src="lbl.jpg" alt="Imagem relacionada às conquistas de LeBron James">
+            <h2>Conquistas e Legado</h2>
+            <p>LeBron conquistou vários campeonatos da NBA, prêmios de MVP e medalhas olímpicas. Ele não é apenas um atleta vencedor, mas também um exemplo de liderança. Seu trabalho em comunidades e sua Fundação inspiram jovens a acreditar que sonhos grandes são possíveis.</p>
+        </section>
+
+        <section>
+            <img src="images.jpg" alt="Imagem relacionada à inspiração de LeBron James para o futuro">
+            <h2>Inspiração para o Futuro</h2>
+            <p>King James nos ensina que o sucesso vem da combinação de talento, trabalho duro e apoio à comunidade. Sua história mostra que é possível transformar adversidade em força e usar a visibilidade para fazer a diferença.</p>
+        </section>
+
+        <footer>
+            <p>LeBron James é mais do que um atleta. Ele é uma <strong>inspiração</strong> para quem busca crescer, superar obstáculos e transformar o próprio entorno.</p>
+        </footer>
+    </main>
+</body>
+</html>
