@@ -19,9 +19,9 @@ O objetivo do projeto é praticar conceitos de estruturação de páginas web e 
 
 ## 🚀 Tecnologias Utilizadas
 
-* HTML5
-* CSS3
-
+* HTML
+* CSS
+  
 ---
 
 ## 🎨 Design da Página
