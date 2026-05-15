@@ -1,5 +1,3 @@
-Aqui está um README explicativo em português para você colocar no seu repositório do GitHub:
-
 # README - Página Tributo ao LeBron James
 
 ## 📖 Sobre o Projeto
