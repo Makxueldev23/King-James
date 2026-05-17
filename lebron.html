@@ -138,6 +138,80 @@
             background-clip: text;
             font-style: normal;
         }
+        ul {
+            font-style: italic;
+            color: var(--muted);
+        }
+        section:last-of-type p {
+            color: var(--gold);
+        }
+        /* ── formulário ── */
+        section form {
+            width: 100%;
+        }
+        section fieldset {
+            border: 1px solid var(--gold-dim);
+            border-radius: 10px;
+            padding: 20px 24px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+        section fieldset legend {
+            color: var(--gold-light);
+            font-size: 1.1rem;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            padding: 0 8px;
+        }
+        section fieldset p {
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+        section fieldset label {
+            display: block;
+            color: var(--gold);
+            font-size: 0.92rem;
+            margin-bottom: 4px;
+            letter-spacing: 0.03em;
+        }
+        section fieldset input[type="text"],
+        section fieldset input[type="email"] {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 14px;
+            background: #1a1a1a;
+            border: 1px solid var(--gold-dim);
+            border-radius: 8px;
+            color: var(--text);
+            font-family: Georgia, serif;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            box-sizing: border-box;
+        }
+        section fieldset input[type="text"]:focus,
+        section fieldset input[type="email"]:focus {
+            border-color: var(--gold);
+            box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.2);
+        }
+        section fieldset input[type="submit"] {
+            margin-top: 8px;
+            padding: 10px 28px;
+            background: linear-gradient(90deg, var(--gold-dim), var(--purple-dark));
+            border: 1px solid var(--gold);
+            border-radius: 8px;
+            color: var(--gold-light);
+            font-family: Georgia, serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+        }
+        section fieldset input[type="submit"]:hover {
+            background: linear-gradient(90deg, var(--gold), var(--purple));
+            box-shadow: 0 4px 16px rgba(201, 168, 76, 0.3);
+            transform: translateY(-1px);
+        }
     </style>
 </head>
 <body>
@@ -151,6 +225,17 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvzcdQgtonMWQHlNTe4McNKBp7NAVjJdzCg&s" alt="Imagem relacionada à introdução de LeBron James">
             <h2>Quem é LeBron James?</h2>
             <p>LeBron James é um dos maiores jogadores de basquete de todos os tempos. Nascido em Akron, Ohio, ele superou desafios na infância para se tornar um líder dentro e fora das quadras. Seu talento, dedicação e humildade inspiram milhões de pessoas ao redor do mundo.</p>
+        </section>
+
+        <section>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJYN0Frc9XUDpl1KwmBYcNrPkol-orh9gv6g&s" alt="KING JAMES imagem">
+            <h2>A Trajetória</h2>
+            <ul>
+                <li><strong>Início da Carreira:</strong> LeBron foi selecionado como a primeira escolha geral no draft da NBA em 2003 pelo Cleveland Cavaliers, onde rapidamente se destacou como um prodígio do basquete.</li><br>
+                <li><strong>Primeira Passagem pelo Miami Heat:</strong> Em 2010, LeBron fez uma mudança controversa para o Miami Heat, onde conquistou dois campeonatos consecutivos em 2012 e 2013.</li><br>
+                <li><strong>Retorno ao Cleveland Cavaliers:</strong> Em 2014, LeBron retornou ao Cleveland Cavaliers e liderou a equipe a um título histórico em 2016, quebrando uma seca de 52 anos sem campeonatos para a cidade.</li><br>
+                <li><strong>Los Angeles Lakers:</strong> Em 2018, LeBron se juntou ao Los Angeles Lakers, onde continuou a mostrar sua excelência e conquistou seu quarto campeonato em 2020.</li><br>
+            </ul>
         </section>
 
         <section>
@@ -174,6 +259,21 @@
         <footer>
             <p>LeBron James é mais do que um atleta. Ele é uma <strong>inspiração</strong> para quem busca crescer, superar obstáculos e transformar o próprio entorno.</p>
         </footer>
+
+        <section>
+            <form action="">
+                <fieldset><legend>Registre-se</legend><br>
+                    <p><strong>Inscreva-se para receber atualizações:</strong></p><br>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <input type="submit" value="Registrar">
+                </fieldset>
+            </form>     
+        </section>
     </main>
 </body>
 </html>
