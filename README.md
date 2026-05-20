@@ -2,7 +2,7 @@
 
 ## 📖 Sobre o Projeto
 
-Este projeto é uma página web desenvolvida em **HTML5** e **CSS3** dedicada ao jogador de basquete LeBron James, conhecido como **King James**.
+Este projeto é uma página web desenvolvida em **HTML** e **CSS** dedicada ao jogador de basquete LeBron James, conhecido como **King James**.
 
 A página apresenta:
 
